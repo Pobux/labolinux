@@ -27,4 +27,4 @@ grep "^[^eéèêë]*[eéèêë][^eéèêë]*t[^eéèêë]*[eéèêë][^eéèêë
 
 cat french | grep -o .$ | sort | uniq -c | sort -n -k 1 -r | head -n 1
 
-cat french | grep -o ..$ | cut -c 1 | sort | uniq -c | sort -n -k 1 -r | head -n 1
+cat french | grep -o ..$ | cut -c 1 | sort | uniq -c | sort -n -k 1 | tail -n 1
