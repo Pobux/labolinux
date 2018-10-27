@@ -26,7 +26,9 @@ Faire cat Z1.txt | tr -cd '[:alnum:]'
 Faire cat Z1.txt | tr -cd '[:alnum:]' | grep -o '[0-9]*'
 
 il y a 4 programme exécuté
-    cat | tr | grep > list & && ps 
+    cat | tr | grep a > list & 
+    #CTRL+C
+    ps
 bash, cat, tr, grep
 
 bash est responsable de *.txt (globing)
