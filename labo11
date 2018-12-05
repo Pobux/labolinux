@@ -1,0 +1,10 @@
+sigle=$1
+
+if [ -z $sigle ]; then
+	echo "mettre un sigle"
+	exit 1
+fi
+
+contenu=$(wget -qO- https://etudier.uqam.ca/cours?sigle=$sigle | grep "Cours magistral" -B2 | grep -oe "[A-Z]\{2\}-.[0-9]\{3\}*")
+echo $contenu
+
